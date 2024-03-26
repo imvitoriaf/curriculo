@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vitória Freitas</title>
+    <script language="javascript"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <section id="cabecalho">
+        <img src="./imgs/vitoria.jpg" alt="Vitória Freitas" />
+        <div>
+          <h1>VITÓRIA SOUZA OLIVEIRA DE FREITAS</h1>
+          <h3>Cursando Gestão da Tecnologia da Informação</h3>
+          <p>Brasileira, 26 anos, casada.</p>
+          <p>Itaquaquecetuba, São Paulo, Brasil</p>
+          <p>Email: vitoria.freitas@telefonica.com</p>
+          <p>Telefone: (11)9.8628-3208</p>
+          <div id="social-links">
+            <a
+              href="https://www.linkedin.com/in/vitória-freitas-860510137"
+              target="_blank"
+              ><img src="./imgs/linkedin.png" alt="Linkedin"
+            /></a>
+            <a href="https://github.com/imvitoriaf" target="_blank"
+              ><img src="./imgs/github.png" alt="GitHub"
+            /></a>
+          </div>
+          <a href="curriculo.pdf" target="_blank"
+            ><button>Download CV</button></a
+          >
+        </div>
+      </section>
+
+      <section>
+        <div class="card-resumo">
+          <h3>RESUMO</h3>
+          <p>
+            Olá, eu sou a Vitória, formada em Secretariado, estudante do 5°
+            semestre de Gestão da Tecnologia da Informação na Fatec de
+            Itaquaquecetuba. Estou empolgada para aprender e crescer nesta
+            indústria dinâmica e estou pronta para enfrentar desafios e absorver
+            novos conhecimentos. Sou uma pessoa proativa e ansiosa para
+            contribuir de forma significativa para projetos de equipe. Estou
+            aberta a oportunidades que me permitam desenvolver minhas
+            habilidades e ganhar experiência prática na área de TI.
+          </p>
+        </div>
+      </section>
+
+      <section class="card-secao">
+        <h3>EXPERIÊNCIA</h3>
+
+        <div class="container-experiencias">
+          <div class="container-experiencia">
+            <h4>Estágiria de TI</h4>
+            <p>Vivo (Telefônica Brasil) · Estágio</p>
+            <p>ago de 2023 - o momento · 8 meses</p>
+            <p>São Paulo, Brasil · Híbrida</p>
+          </div>
+
+          <div class="container-experiencia">
+            <h4>Assistente administrativo</h4>
+            <p>Upa Sadako Sedoguti · Tempo integral</p>
+            <p>set de 2020 - dez de 2021 · 1 ano 4 meses</p>
+            <p>Itaquaquecetuba, São Paulo, Brasil · Presencial</p>
+          </div>
+        </div>
+        <div class="container-experiencias">
+          <div class="container-experiencia">
+            <h4>Recepcionista</h4>
+            <p>Auto Escola Nativa · Estágio</p>
+            <p>mar de 2019 - mar de 2020 · 1 ano 1 mês</p>
+            <p>Itaquaquecetuba, São Paulo, Brasil · Presencial</p>
+          </div>
+
+          <div class="container-experiencia">
+            <h4>Secretária</h4>
+            <p>Preto Advogados · Estágio</p>
+            <p>dez de 2018 - mar de 2019 · 4 meses</p>
+            <p>São Paulo, Brasil · Presencial</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="card-competencia">
+          <h3>COMPETÊNCIAS</h3>
+          <div class="card-competencias">
+            <div style="height: 500px; width: 500px">
+              <canvas id="grafico1"></canvas>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+            <script>
+              const ctx = document.getElementById("grafico1");
+
+              new Chart(ctx, {
+                type: "bar",
+                data: {
+                  labels: ["Novembro", "Dezembro", "Janeiro", "Fevereiro", "Março"],
+
+                  datasets: [
+                    {
+                      label: "Evolução de Aprendizado",
+                      data: [45, 40, 20, 30, 65],
+                      borderColor: "#37095A",
+                      backgroundColor: "#9863c0",
+                      borderWidth: 3,
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                    },
+                  },
+                },
+              });
+            </script>
+            <div style="height: 500px; width: 500px">
+              <canvas id="grafico2"></canvas>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+            <script>
+              const ctx1 = document.getElementById("grafico2");
+
+              new Chart(ctx1, {
+                type: "bar",
+                data: {
+                  labels: [
+                    "Excel",
+                    "Word",
+                    "PowerPoint",
+                    "Access",
+                    "Outlook",
+                    "OneNote",
+                  ],
+                  datasets: [
+                    {
+                      label: "Pacote Office",
+                      data: [9, 10, 10, 8, 10, 7],
+                      borderColor: "#37095A",
+                      backgroundColor: "#9863c0",
+                      borderWidth: 3,
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                    },
+                  },
+                },
+              });
+            </script>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
